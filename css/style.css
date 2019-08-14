@@ -97,6 +97,7 @@ div {
     height:100%;
     width:100%;
     background: url("../img/triangle.png") no-repeat  50% -20px,url("../img/pattern.gif") repeat;
+    overflow-x: hidden;
 }
 
 
@@ -139,6 +140,10 @@ div {
     -moz-transition: all 0.6s ease;;
     -o-transition: all 0.6s ease;;
     transition: all 0.6s ease;
+}
+
+.lang-dropdown.show .lang-btn {
+    color: transparent;
 }
 
 .lang-btn {
@@ -191,12 +196,12 @@ div {
 }
 .dropdown-toggle:before {
     right: 0;
-    transform: translateY(-50%) rotate(135deg); 
+    transform: rotate(135deg); 
 }
 
 .dropdown-toggle:after {
     right: 3px;
-    transform: translateY(-50%) rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .dropdown-toggle:hover {
@@ -321,6 +326,7 @@ div {
     width: 42px;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 .send-value label, .get-value label {
@@ -331,8 +337,25 @@ div {
     margin-bottom: 0px;
 }
 
-.send-value select, .get-value select {
-    border-bottom: 0px!important;
+.send-value .dropdown-menu, .get-value .dropdown-menu {
+    border:none;
+    border-radius: 0px;
+    min-width: 60px;
+    top: -66px!important;
+    background-color: rgba(28, 24, 32, 0.8);
+    padding-top: 3px;
+}
+
+.send-value .dropdown-item:focus, .send-value .dropdown-item:hover, .get-value .dropdown-item:focus, .get-value .dropdown-item:hover {
+    background-color: rgba(28, 24, 32, 1);
+}
+
+.send-value .dropdown-toggle:before, .get-value .dropdown-toggle:before {
+    right: 12px;
+}
+
+.send-value .dropdown-toggle:after, .get-value .dropdown-toggle:after {
+    right: 15px;
 }
 
 .send-value__currency, .get-value__currency {
@@ -361,7 +384,7 @@ div {
 
 .exchange-btn:hover {
     background-color: var(--mint-second-color);
-    border: 1px solid var(--mint-second-color);
+    border-color: var(--mint-second-color)!important;
 }
 
 .exchange-btn:hover span {
@@ -410,6 +433,224 @@ div {
 
 /*#endregion Main-Section*/
   
+/*#region Showcases*/
+.showcase {
+    margin-top: 120px;
+}
+
+.showcase h2 {
+    font-size: 44px;
+    font-family: "Montserrat Bold";
+    color: rgb(249, 243, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.showcase p {
+    font-size: 21px;
+    font-family: "Montserrat Medium";
+    color: rgb(82, 220, 166);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.showcase-img img {
+    width: 100%;
+}
+
+.personal_dashboard-wrap {
+    margin-top: 80px;
+}
+
+.personal_dashboard-img {
+    padding: 7px 30px 7px 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    overflow: hidden;
+}
+
+.personal_dashboard-img img {
+    width: 130%;
+    display: inline-block;
+    margin-left: -29%;
+}
+
+  
+
+/*#endregion Showcases*/
+
+/*#region Testimonials*/
+
+.testimonials {
+    margin-top: 136px;
+}
+
+.testimonials h2 {
+    font-size: 44px;
+    font-family: "Montserrat Bold";
+    color: rgb(249, 243, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 22px!important;
+}
+  
+.testimonial-img {
+    position: relative;
+    height: 254px;
+    width: 208px;
+    background: #631fa7;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.testimonial-img:before {
+    position: absolute;
+    content: '';
+    background: url("../img/testimonials.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 12px;
+    left: 12px;
+    height: calc(100% - 22px);
+    width: calc(100% - 22px);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.testimonial-item h5 {
+    font-size: 26px;
+    font-family: "Montserrat SemiBold";
+    color: var(--mint-color);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.testimonial-item p {
+    font-size: 18px;
+    font-family: "Montserrat Light";
+    color: rgb(249, 243, 255);
+    line-height: 1.333;
+    text-align: center;
+}
+  
+
+/*#endregion Testimonials*/
+
+/*#region Testimonials*/
+.call-to-action {
+    margin-top: 158px;
+}
+
+.call-to-action__wrap {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 34px 53px 21px;
+}
+
+.call-to-action__title {
+    font-size: 44px;
+    font-family: "Montserrat Bold";
+    color: rgb(249, 243, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.call-to-action__input-title {
+    font-size: 30px;
+    font-family: "Montserrat Bold";
+    color: rgb(222, 187, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+}
+
+.call-to-action__input-wrap {
+    position: relative;
+}
+
+.call-to-action__input-wrap input {
+    border-radius: 0px;
+    border: none;
+    height: 40px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    overflow: hidden;
+}
+
+.call-to-action__btn {
+    position: absolute;
+    width: 140px;
+    right: 0;
+    height: 40px;
+    background-color: var(--mint-color);
+    border-radius: 22px;
+    border: 1px solid var(--mint-color);
+    -webkit-box-shadow: -1px 0px 13px -4px rgba(54,7,102,1);
+    -moz-box-shadow: -1px 0px 13px -4px rgba(54,7,102,1);
+    box-shadow: -1px 0px 13px -4px rgba(54,7,102,1);
+    cursor: pointer;
+}
+
+.call-to-action__btn span {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat Medium";
+    color: var(--button-text-color);
+    line-height: 1.2;
+}
+
+.call-to-action__btn:hover {
+    background-color: var(--mint-second-color);
+    border-color: var(--mint-second-color)!important;
+}
+
+.call-to-action__btn:hover span {
+    color: #602ea8;
+}
+ 
+
+/*#endregion Testimonials*/
+
+/*#region Footer*/
+footer {
+    min-height: 85px;
+    margin-top: 189px;
+}
+
+.footer-nav li a {
+    font-size: 14px;
+    font-family: "Montserrat Regular";
+    color: rgb(194, 185, 202);
+    line-height: 1.2;
+}
+  
+/*#endregion Footer*/
+
+@media (max-width:425px) {
+    .call-to-action__input-wrap input {
+        border-radius: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .call-to-action__btn {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
 @media (min-width: 768px) and (max-width:991px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: .4rem;
