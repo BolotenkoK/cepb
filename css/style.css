@@ -177,6 +177,26 @@ div {
     border: none;
 }
 
+button:focus {
+    outline: none;
+}
+
+.navbar-toggler {
+    width: 49px;
+    height: 49px;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none!important;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: var(--mint-color);
+    margin-top: 5px;
+    float: right;
+}
+
 .navbar-nav .dropdown-menu .dropdown-item, .lang-dropdown .dropdown-item{
     padding-left: 9px;
     color: #fff;
@@ -327,6 +347,11 @@ div {
     color: var(--purple-color);
     height: 42px;
     display: inline-block;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 .dropdown img {
@@ -722,6 +747,10 @@ footer {
         line-height: 1.5;
         border-bottom: 1px solid;
         letter-spacing: 0.6px;
+    }
+
+    footer {
+        margin-top: 110px;
     }
 }
 
