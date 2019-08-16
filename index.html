@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -51,7 +51,7 @@
                     </a>
                 </div>
                 <!-- Dropdown -->
-                <div class="nav-item dropdown lang-dropdown">
+                <div class="nav-item dropdown lang-dropdown d-none d-md-block">
                     <a class="nav-link dropdown-toggle lang-btn" href="#" id="navbardrop" data-toggle="dropdown">
                         Eng
                     </a>
@@ -73,6 +73,15 @@
                             <a class="nav-link" href="/register">Sign Up</a>
                         </li>
                     </ul>
+                </div>
+                <div class="nav-item dropdown lang-dropdown">
+                    <a class="nav-link dropdown-toggle lang-btn" href="#" id="navbardrop" data-toggle="dropdown">
+                        Eng
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">En</a>
+                        <a class="dropdown-item" href="#">Ru</a>
+                    </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
@@ -197,7 +206,7 @@
             <section class="showcase">
                 <div class="container">
                     <div class="row no-gutters">
-                        <div class="col-xs-12 col-md-6 my-auto showcase-text">
+                        <div class="col-12 col-md-6 my-auto pl-4 pl-md-0 showcase-text">
                             <h2>
                                 Affiliate
                                 <br> 
@@ -205,17 +214,17 @@
                             </h2>
                             <p class="lead mb-0">Become our partner and start making a profit! Get 0.005 BTC bonus for registration, and receive up to 0,6% of every transaction as a reward for your referral exchange</p>
                         </div>
-                        <div class="col-xs-12 col-md-6 showcase-img">
+                        <div class="col-12 col-md-6 mt-5 mt-md-0 showcase-img">
                             <img src="img/Illustration1.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="personal_dashboard-wrap container-fluid p-0">
                     <div class="row">
-                        <div class="col-xs-12 col-md-5 personal_dashboard-img">
+                        <div class="col-12 col-md-5 d-none d-md-block personal_dashboard-img">
                             <img src="img/personal_dashboard.png" alt="">
                         </div>
-                        <div class="col-xs-12 col-md-6 offset-md-1 my-auto showcase-text">
+                        <div class="col-12 col-md-6 offset-md-1 my-auto showcase-text">
                             <h2>
                                 Personal 
                                 <br>
@@ -226,6 +235,9 @@
                                 functions
                             </p>
                         </div>
+                        <div class="col-12 col-md-5 d-block d-sm-none mt-5 personal_dashboard-img">
+                            <img src="img/personal_dashboard.png" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -235,21 +247,21 @@
                 <div class="container">
                     <h2>What people are saying...</h2>
                     <div class="row">
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="testimonial-item">
                                 <div class="testimonial-img"></div>
                                 <h5>Margaret E.</h5>
                                 <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="testimonial-item">
                                 <div class="testimonial-img"></div>
                                 <h5>Fred S.</h5>
                                 <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-12 col-md-4">
                             <div class="testimonial-item">
                                 <div class="testimonial-img"></div>
                                 <h5>Sarah W.</h5>
@@ -264,14 +276,14 @@
             <section class="call-to-action text-white text-center">
                 <div class="container call-to-action__wrap">
                     <div class="row">
-                        <div class="col-xs-12 col-md-5">
+                        <div class="col-12 col-md-5">
                             <h2 class="call-to-action__title">
                                 Ready to get 
                                 <br>
                                 started?
                             </h2>
                         </div>
-                        <div class="col-xs-12 col-md-7">
+                        <div class="col-12 col-md-7">
                             <h2 class="call-to-action__input-title">Sign up now!</h2>
                             <form>
                                 <div class="form-row call-to-action__input-wrap">
@@ -293,8 +305,8 @@
                 var currencyListObj=JSON.parse(currencyList);
 
             </script>
-            <!-- <div class="row chat-window col-sm-10 col-xs-12 col-md-4 col-lg-3" id="chat_window_1" style="margin-left:10px;">
-                <div class="col-xs-12 col-md-12">
+            <!-- <div class="row chat-window col-sm-10 col-12 col-md-4 col-lg-3" id="chat_window_1" style="margin-left:10px;">
+                <div class="col-12 col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading top-bar">
                             <div class="row">
@@ -367,7 +379,7 @@
             <footer>
                 <div class="container">
                     <div class="row justify-content-center justify-content-between">
-                            <p class="text-muted small">&copy; 333.land 2019. All Rights Reserved.</p>
+                            <p class="d-none d-md-block text-muted small">&copy; 333.land 2019. All Rights Reserved.</p>
                             <ul class="list-inline footer-nav">
                                 <li class="list-inline-item">
                                     <a href="/en/content/view/about-us">About</a>
@@ -389,6 +401,7 @@
                                     <a href="/en/content/view/privacy-police">Privacy Policy</a>
                                 </li>
                             </ul>
+                            <p class="d-block d-md-none text-muted small">&copy; 333.land 2019. All Rights Reserved.</p>
                     </div>
                 </div>
             </footer>
